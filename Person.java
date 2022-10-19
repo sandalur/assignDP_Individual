@@ -1,8 +1,6 @@
-public abstract class Person implements ProductMenu {
+public class Person {
 
 	private ProductMenu theProductMenu;
-
-	private Buyer buyer;
 
 	private ProductMenu productMenu;
 
@@ -26,8 +24,8 @@ public abstract class Person implements ProductMenu {
 
 	}
 
-	public ProductMenu CreateProductMenu() {
-		return null;
+	public void CreateProductMenu() {
+
 	}
 
 }

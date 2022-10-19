@@ -20,7 +20,7 @@ public class MeatProductMenu implements ProductMenu {
 
 	}
 
-	public void showComBoxes() {
+	public void showComboxes() {
 
 	}
 

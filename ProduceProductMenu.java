@@ -8,10 +8,6 @@ public class ProduceProductMenu implements ProductMenu {
 
 	}
 
-	public void showViewButton() {
-
-	}
-
 	public void showRadioButton() {
 
 	}
@@ -20,7 +16,11 @@ public class ProduceProductMenu implements ProductMenu {
 
 	}
 
-	public void showComBoxes() {
+	public void showViewButton() {
+
+	}
+
+	public void showComboxes() {
 
 	}
 
