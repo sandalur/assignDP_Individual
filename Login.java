@@ -36,8 +36,8 @@ public class Login {
     }
     protected UserInfoItem displayLoginForm() { // Displays the login form
         switch (type_of_user) {
-            case 1 -> System.out.println("Seller Login Form");
-            case 0 -> System.out.println("Buyer Login Form");
+            case 1 : System.out.println("Seller Login Form");
+            case 0 : System.out.println("Buyer Login Form");
         }
 
         UserInfoItem userObject = giveCredentials(); // takes the credentials from the user
