@@ -1,8 +1,10 @@
+import java.io.IOException;
+
 public interface ProductMenu {
 
-	private Person person;
+	Person person = null;
 
-	public abstract void showMenu();
+	public abstract void showMenu() throws IOException;
 
 	public abstract void showAddButton();
 

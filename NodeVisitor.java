@@ -8,7 +8,7 @@ public class NodeVisitor {
 
 	}
 
-	public void visitFacade(Facade facade) {
+	public void visitFacade(Facade facadeObject) {
 
 	}
 
