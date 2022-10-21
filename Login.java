@@ -1,6 +1,5 @@
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 
@@ -35,13 +34,13 @@ public class Login {
         System.out.println("Invalid Credentials. try again!");
         return false;
     }
-    protected UserInfoitem displayLoginForm() { // Displays the login form
+    protected UserInfoItem displayLoginForm() { // Displays the login form
         switch (type_of_user) {
             case 1 -> System.out.println("Seller Login Form");
             case 0 -> System.out.println("Buyer Login Form");
         }
 
-        UserInfoitem userObject = giveCredentials(); // takes the credentials from the user
+        UserInfoItem userObject = giveCredentials(); // takes the credentials from the user
         if(userObject == null){ // if incorrect user then null object will be returned
             System.out.println("Invalid");
             return null;
@@ -61,14 +60,14 @@ public class Login {
         }
         return type_of_user;
     }
-    private UserInfoitem giveCredentials() { // Takes the credentials from the user
+    private UserInfoItem giveCredentials() { // Takes the credentials from the user
         while(true){
             System.out.println("Please enter your username : ");
             String scannedUsername = input.next();
             System.out.println("Please enter your password : ");
             String scannedPassword = input.next();
             if(auth(scannedUsername, scannedPassword)){
-                return new UserInfoitem(type_of_user, scannedUsername, scannedPassword);
+                return new UserInfoItem(type_of_user, scannedUsername, scannedPassword);
             }
         }
     }

@@ -1,10 +1,10 @@
-public class UserInfoitem {
+public class UserInfoItem {
     private final int userType;
     private final String username;
     private final String password;
 
     // Making the object
-    public UserInfoitem(int userType, String username, String password){
+    public UserInfoItem(int userType, String username, String password){
         this.userType = userType;
         this.username = username;
         this.password = password;

@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.Iterator;
 import java.util.Scanner;
 public class Facade {
 	private final Scanner input = new Scanner(System.in);
@@ -13,7 +12,7 @@ public class Facade {
 
 	private Person thePerson;
 
-	private UserInfoitem userInfoitem;
+	private UserInfoItem userInfoitem;
 
 	public Facade(){
 		System.out.println("Facade pattern is being implemented");
@@ -65,7 +64,7 @@ public class Facade {
 	public boolean login() {
 		Login loginObject = new Login(); // Creates the loginObject
 		set_type_of_user(loginObject.userSelection()); // Sets the type of user selected from the input
-		UserInfoitem user = loginObject.displayLoginForm(); // User gets created
+		UserInfoItem user = loginObject.displayLoginForm(); // User gets created
 		if(user == null){
 			return false;
 		}
@@ -102,7 +101,7 @@ public class Facade {
 		reminder.visitFacade(this);
 	}
 
-	public void createUser(UserInfoitem userinfoitem) {
+	public void createUser(UserInfoItem userinfoitem) {
 
 	}
 
